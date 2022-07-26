@@ -10,7 +10,7 @@ import (
 
 func main() {
 
-	CheckNumbersFromA()
+	CheckNumbers("a.txt")
 
 }
 
@@ -36,10 +36,10 @@ func isPrime(num int) {
 	}
 }
 
-func CheckNumbersFromA() {
+func CheckNumbers(location string) {
 
 	var count int = 0
-	content, err := os.Open("a.txt")
+	content, err := os.Open(location)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -51,5 +51,4 @@ func CheckNumbersFromA() {
 		num, _ := strconv.Atoi(lineStr)
 		isPrime(num)
 	}
-
 }
