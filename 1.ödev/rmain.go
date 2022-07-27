@@ -43,15 +43,14 @@ func isPrime(num int) {
 
 func CheckNumbers(location string) {
 
-	var count int = 0
 	content, err := os.Open(location)
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println("is not Prime")
+
 	scanner := bufio.NewScanner(content)
 	for scanner.Scan() {
-		count = count + 1
+
 		lineStr := scanner.Text()
 		num, _ := strconv.Atoi(lineStr)
 		isPrime(num)
