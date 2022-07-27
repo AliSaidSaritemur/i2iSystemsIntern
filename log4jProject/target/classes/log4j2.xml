@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+
+<Appenders>
+
+<Console name ="ConsoleDebug" target="SYSTEM.OUT">
+      <PatternLayout pattern="%d{HH:mm:ss}  - %msg%n"/>
+</Console>
+
+<Console name ="ConsoleInfo" target="SYSTEM.OUT">
+      <PatternLayout pattern="%d{HH:mm}  - %msg%n"/>
+</Console>
+
+<Console name ="ConsoleError" target="SYSTEM.OUT">
+      <PatternLayout pattern="%d{HH}  - %msg%n"/>
+</Console>
+
+</Appenders>
+
+
+<Loggers>
+ <Root>
+            <AppenderRef ref="ConsoleError" level="error "/>
+            <AppenderRef ref="ConsoleDebug" level="debug" />
+             <AppenderRef ref="ConsoleInfo" level="info" />
+            
+        </Root>
+
+</Loggers>
+
+
+</Configuration>
