@@ -25,6 +25,12 @@ func main() {
 			fmt.Println("is not Prime")
 			continue
 		}
+
+		if num == 2 {
+
+			fmt.Println("is not Prime")
+			continue
+		}
 		var result bool = false
 
 		for i := 2; i < num; i++ {

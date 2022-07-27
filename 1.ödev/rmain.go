@@ -21,6 +21,11 @@ func isPrime(num int) {
 		fmt.Println("is not Prime")
 		return
 	}
+	if num == 2 {
+
+		fmt.Println("is not Prime")
+		return
+	}
 	for i := 2; i < num; i++ {
 
 		if num%i == 0 {
