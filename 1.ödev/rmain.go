@@ -33,7 +33,7 @@ func isPrime(num int) {
 		fmt.Println(num, "is not Prime")
 
 	} else {
-		fmt.Println(num, "Prime")
+		fmt.Println(num, "is Prime")
 	}
 }
 
@@ -44,6 +44,8 @@ func CheckNumbers(location string) {
 		log.Fatal(err)
 	}
 
+	defer content.Close()
+
 	scanner := bufio.NewScanner(content)
 	for scanner.Scan() {
 
@@ -51,4 +53,5 @@ func CheckNumbers(location string) {
 		num, _ := strconv.Atoi(lineStr)
 		isPrime(num)
 	}
+
 }
