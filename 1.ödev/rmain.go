@@ -17,15 +17,11 @@ func main() {
 func isPrime(num int) {
 
 	var result bool = false
-	if num < 1 {
-		fmt.Println("is not Prime")
+	if num < 2 {
+		fmt.Println(num, "is not Prime")
 		return
 	}
-	if num == 2 {
 
-		fmt.Println("is not Prime")
-		return
-	}
 	for i := 2; i < num; i++ {
 
 		if num%i == 0 {
@@ -34,10 +30,10 @@ func isPrime(num int) {
 	}
 
 	if result == true {
-		fmt.Println("is not Prime")
+		fmt.Println(num, "is not Prime")
 
 	} else {
-		fmt.Println("Prime")
+		fmt.Println(num, "Prime")
 	}
 }
 

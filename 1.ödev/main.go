@@ -21,16 +21,11 @@ func main() {
 		lineStr := scanner.Text()
 		num, _ := strconv.Atoi(lineStr)
 
-		if num < 1 {
-			fmt.Println("is not Prime")
+		if num < 2 {
+			fmt.Println(num, "is not Prime")
 			continue
 		}
 
-		if num == 2 {
-
-			fmt.Println("is not Prime")
-			continue
-		}
 		var result bool = false
 
 		for i := 2; i < num; i++ {
@@ -44,11 +39,11 @@ func main() {
 
 		if result == true {
 
-			fmt.Println("is not Prime")
+			fmt.Println(num, " is not Prime")
 
 		} else {
 
-			fmt.Println("Prime")
+			fmt.Println(num, " is Prime")
 		}
 	}
 
