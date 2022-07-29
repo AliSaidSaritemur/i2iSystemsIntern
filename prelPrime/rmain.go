@@ -13,7 +13,7 @@ var strNums string
 func main() {
 
 	CheckNumbers("a.txt")
-	writesNumberstoFile()
+	writesNumberstoFile("results.txt")
 }
 
 func isPrime(num int, numStr string) {
@@ -59,9 +59,9 @@ func CheckNumbers(location string) {
 
 }
 
-func writesNumberstoFile() {
+func writesNumberstoFile(location string) {
 
-	f, err := os.Create("test.txt")
+	f, err := os.Create(location)
 	if err != nil {
 		fmt.Println(err)
 		return
