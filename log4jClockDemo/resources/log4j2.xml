@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="WARN">
+<Configuration status="WARN" monitorInterval="6">
 	<Properties>
 		<Property name="filename">./logs</Property>
 	</Properties>
@@ -13,16 +13,14 @@
 			<PatternLayout>
 				<pattern>%d{HH:mm:ss} [%t] %-5level %logger{36} - %msg%n</pattern>
 			</PatternLayout>
-			<SizeBasedTriggeringPolicy size="1 MB" />			
+			<SizeBasedTriggeringPolicy size="1 MB" />	
+		
 		</RollingFile>
 		
 	</Appenders>
 	<Loggers>
-		<Logger name="log4jTimer" level="error" additivity="false">
+		<Root level="info">
 			<AppenderRef ref="Console" />
-			<AppenderRef ref="File" />
-		</Logger>
-		<Root level="debug">
 			<AppenderRef ref="File" />
 		</Root>
 	</Loggers>
