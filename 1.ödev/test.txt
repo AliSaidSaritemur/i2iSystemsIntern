@@ -1,0 +1,7 @@
+27 is not Prime 
+32 is not Prime 
+21 is not Prime 
+11 is  Prime 
+-5is not Prime 
+1is not Prime 
+2 is  Prime 
