@@ -24,7 +24,7 @@ func isPrime(num int, numStr string) {
 		return
 	}
 
-	for i := 2; i < num; i++ {
+	for i := 2; i < num/2; i++ {
 
 		if num%i == 0 {
 			result = true
@@ -73,5 +73,5 @@ func writesNumberstoFile(location string) {
 		fmt.Println(sa)
 		f.Close()
 	}
-
+	f.Close()
 }
