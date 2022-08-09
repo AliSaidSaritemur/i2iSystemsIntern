@@ -23,6 +23,13 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+
+    <dependency>
+      <groupId>com.oracle.database.jdbc</groupId>
+      <artifactId>ojdbc8</artifactId>
+      <version>21.6.0.0.1</version>
+    </dependency>
+
     <!-- https://mvnrepository.com/artifact/org.voltdb/voltdbclient -->
     <dependency>
       <groupId>org.voltdb</groupId>
